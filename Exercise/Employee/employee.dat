@@ -1,0 +1,37 @@
+--Employee Details--
+Id: 1
+Name: WAVE
+Salary: 12000
+Age: 23
+Gender: male
+----------------------------------
+Id: 2
+Name: my
+Salary: 15000
+Age: 40
+Gender: female
+----------------------------------
+Id: 3
+Name: Q
+Salary: 30000
+Age: 34
+Gender: male
+----------------------------------
+Id: 4
+Name: JJ
+Salary: 40000000
+Age: 14
+Gender: female
+----------------------------------
+Id: 5
+Name: wave
+Salary: 10000000
+Age: 19
+Gender: male
+----------------------------------
+Id: 6
+Name: T
+Salary: 12
+Age: 5
+Gender: male
+----------------------------------
