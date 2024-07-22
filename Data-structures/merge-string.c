@@ -2,31 +2,34 @@
 
 int main()
 {
-    char firstname[100], lastname[50];
-    int i = 0, j = 0;
+    char firstName[100], lastName[50];  // Declare variables for storing first name and last name
+    int i = 0, j = 0;  // Declare index variables
 
     printf("\n Enter the first name : ");
-    gets(firstname);
-    printf("\n Enter the lastname string : ");
-    gets(lastname);
+    gets(firstName);  // Get the first name from the user 
+    
+    printf("\n Enter the last name string : ");
+    gets(lastName);  // Get the last name from the user 
 
-    while (lastname[i] != '\0')
+    // Find the position of the '\0' in lastName
+    while (lastName[i] != '\0')
     {
-        i++;
+        i++;  // Increment i until the null terminator is found
     }
 
-    lastname[i] = ' ';
-    i++;
+    lastName[i] = ' ';  // Add a space after the last name
+    i++;  // Move i to the next position
 
-    while (firstname[j] != '\0')
+    // Copy the first name to the last name after the space
+    while (firstName[j] != '\0')
     {
-        lastname[i] = firstname[j];
-        i++;
-        j++;
+        lastName[i] = firstName[j];  // Copy characters from first name to last name
+        i++;  // Move i to the next position in last name
+        j++;  // Move j to the next position in first name
     }
 
-    lastname[i] = '\0';
+    lastName[i] = '\0';  // Add null terminator at the end of the combined string
     printf("\n After appending, full name is : ");
-    puts(lastname);
-    return 0;
+    puts(lastName);  // Print the last name after appending the first name
+    return 0;  // End of the program
 }
